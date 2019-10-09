@@ -328,6 +328,119 @@ nav h1 a {
 }
 
 
+.snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px 40px 15px 40px;
+  padding: 16px;
+  position: fixed;
+  z-index: 10000;
+  left: 45%;
+  top: 350px;
+  display: flex;
+  width: 35%;
+}
+
+
+
+.snackbar:focus {
+  box-shadow: 0 0 8px 3px rgba(51, 43, 0, 0.8); 
+}
+
+
+.newVer {
+  color: #fff;
+  font-size: 1.2em;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
+  display: flex;
+  width: 50%;
+}
+
+
+.newVer + div {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+
+.snackbar button {
+  background-color: transparent;
+  border: 0;
+  font-weight: 600;
+  margin-left: 6px;
+  letter-spacing: 1px;
+}
+
+
+.update {
+  color: #ff0000;
+  font-size: 1.2em;
+}
+
+
+.dismiss {
+  color: #a6a6a6;
+  font-size: 1.1em;
+}
+
+
+.update:hover,
+.dismiss:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.8);
+}
+
+.snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.25s;
+  animation: fadein 0.6s;
+  z-index: 1000000;
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 45%;
+    opacity: 1;
+  }
+}
+
+
+.snackbar.backToUpdate {
+  visibility: visible;
+  animation-name: vibrate;
+  animation-duration: 0.2s;
+  animation-iteration-count: 3;
+  z-index: 1000;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  75% {
+      transform: rotate(-5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
 
 /* ====================== Restaurant Details ====================== */
 
