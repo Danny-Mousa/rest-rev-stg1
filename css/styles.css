@@ -612,3 +612,180 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+
+/* ************* media queries **********/
+
+/* ************* For Main page **********/
+
+
+@media screen and (max-width: 1066px) {
+
+  
+  #restaurants-list li {
+    width: 40%;
+  }
+
+
+  .filter-options {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 814px) and (min-width: 715px) {
+    
+  
+  #restaurants-list li {
+    min-width: 300px;
+  }
+
+
+  #restaurants-list p {
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+  }
+
+
+  #restaurants-list li a {
+    font-size: 0.85em;
+    padding: 8px 15px 10px;
+  }
+}
+
+@media screen and (max-width: 714px) and (min-width: 675px) {
+
+  
+  #restaurants-list li {
+    width: 40%;
+    min-width: 280px;
+  }
+
+
+  #restaurants-list li a {
+    font-size: 0.85em;
+    padding: 8px 15px 10px;
+  }
+
+
+  #restaurants-list p {
+    font-size: 1.1em;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 674px) {
+
+
+  #restaurants-list li {
+    width: 75%;
+  }
+}
+
+
+/* ********* For Every Restaurant Page ********/
+
+@media screen and (max-width: 950px) {
+
+
+  .inside header {
+    position: absolute;
+  }
+
+
+  .inside #map {
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .inside #map-container {
+    position: relative;
+    top: 131px;
+    width: 100%;
+    height: 300px;
+  }
+
+
+  #restaurant-container,
+  #reviews-container,
+  .inside #footer {
+    width: 100%;
+  }
+
+
+  #restaurant-address {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  #restaurant-name {
+    font-size: 1.7em;
+  }
+
+
+  #rating {
+    font-size: 0.9em;
+    padding-top: 5px;
+    height: 25px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 400px) {
+
+
+  nav h1 a{
+    letter-spacing: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+
+  nav h1 {
+    padding-top: 5px;
+  }
+
+
+  #restaurants-list p {
+    font-size: 1.05em;
+  }
+
+
+  #nameAndDate {
+    padding: 0px 20px 0px 15px;
+  }
+}
+
+
+/****************** for notification *************/
+
+@media screen and (max-width: 1128px){
+
+  .snackbar {
+    padding: 10px 16px 10px 10px;
+  }
+
+
+  .snackbar button {
+    height: 50%;
+  }
+
+
+  .newVer + div {
+   flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 1085px) and (max-width: 1128px) {
+  
+  .newVer + div {
+    width: 40%;
+  }
+}
