@@ -2,7 +2,7 @@
  * Common database helper functions.
  */
 
-var isHosted = (window.location.hostname === "danny-mousa.github.io") ? true : false ; 
+var isHosted = (window.location.hostname === "danny-mousa.github.io") ? 'true' : '' ; 
 
 class DBHelper {
 
