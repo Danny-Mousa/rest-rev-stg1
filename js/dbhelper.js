@@ -155,6 +155,10 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
+
+    if (isHosted){
+      return (`/rest-rev-stg1/img/${restaurant.photograph}`);
+    }
     return (`/img/${restaurant.photograph}`);
   }
 
@@ -184,4 +188,5 @@ class DBHelper {
 
 }
 
-var isHosted = (window.location.hostname === "danny-mousa.github.io") ? 'true' : '' ; 
+var isHosted = (window.location.hostname === "danny-mousa.github.io") ? 'true' : '' ;
+console.log(isHosted);
