@@ -1,6 +1,9 @@
 /**
  * Common database helper functions.
  */
+
+var isHosted = (window.location.hostname === "danny-mousa.github.io") ? true : false ; 
+
 class DBHelper {
 
   /**
@@ -9,6 +12,10 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
+
+    if(isHosted){
+    	return "https://danny-mousa.github.io/rest-rev-stg1/data/restaurants.json";
+    }
     return `http://localhost:${port}/data/restaurants.json`;
   }
 
