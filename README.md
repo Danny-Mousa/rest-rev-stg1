@@ -10,6 +10,7 @@ We have been provided the code for a restaurant reviews website. The code has a 
  - `Informing` the users when there is an _`available update`_ for this site by triggering a `notification`.
 
 # How to run this project :
+ - If you love to see the old broken version of this project before it's being fixed by me, please [click here](https://danny-mousa.github.io/mws-restaurant-stage-1/).
  - To run the project directly,please [click here](https://danny-mousa.github.io/rest-rev-stg1/).
  - For developers: the project repository is [here](https://github.com/Danny-Mousa/rest-rev-stg1).
 
